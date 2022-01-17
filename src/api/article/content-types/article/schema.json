@@ -15,8 +15,7 @@
     "title": {
       "type": "string",
       "required": true,
-      "unique": true,
-      "maxLength": 60
+      "unique": true
     },
     "content": {
       "type": "richtext",
