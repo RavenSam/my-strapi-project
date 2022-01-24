@@ -1,14 +1,14 @@
 {
   "kind": "collectionType",
-  "collectionName": "navigations",
+  "collectionName": "links",
   "info": {
-    "singularName": "navigation",
-    "pluralName": "navigations",
-    "displayName": "Navigation",
+    "singularName": "link",
+    "pluralName": "links",
+    "displayName": "link",
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -19,11 +19,11 @@
       "type": "uid",
       "targetField": "name"
     },
-    "child": {
+    "parent": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::link.link",
-      "mappedBy": "parent"
+      "relation": "manyToOne",
+      "target": "api::navigation.navigation",
+      "inversedBy": "child"
     }
   }
 }
