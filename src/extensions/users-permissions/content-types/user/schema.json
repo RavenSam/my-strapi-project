@@ -77,17 +77,17 @@
         "images"
       ]
     },
-    "bookmarked_articles": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::article.article",
-      "inversedBy": "bookmarkes"
-    },
     "comments": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::comment.comment",
       "mappedBy": "author"
+    },
+    "bookmarked_articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "inversedBy": "bookmarks"
     }
   }
 }

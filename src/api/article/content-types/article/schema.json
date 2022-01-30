@@ -61,11 +61,11 @@
       "target": "plugin::users-permissions.user",
       "mappedBy": "liked_articles"
     },
-    "bookmarkes": {
+    "bookmarks": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "plugin::users-permissions.user",
-      "mappedBy": "bookmarked_articles"
+      "inversedBy": "bookmarked_articles"
     }
   }
 }
